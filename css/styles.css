@@ -1,0 +1,184 @@
+*{
+    margin: 1px;
+}
+body{
+    height:100vh;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+}
+.divMainWrapper{
+    margin:0 2%;
+    font-size:22px;
+    color: #c78d8d;
+    border: 1px solid  #3d1f1f;
+   
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height:100vh;
+   
+}
+
+.divheader{
+font-size: 30px;
+padding: 2rem;
+background-color: aliceblue;
+font-family: 'Times New Roman', Times, serif;
+background-image: url("https://loremflickr.com/600/480/beauty,hair,theraphy/");
+background-size: cover;
+font-family: 'Cinzel', serif;
+
+}
+.divmainwrap{
+    background-color: bisque;
+    margin: 1px;
+    color: black;
+
+
+}
+.divnav{
+ 
+ background-color: orange;
+ display: flex;
+ flex-direction: column;
+}
+
+.mainmenu{
+    flex:1;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 1px 1px #888888;
+}
+.divmain{
+    padding: 1rem;
+    
+ 
+}
+
+#mainImg{
+    width: 100%;
+    height: auto;
+    padding:1rem;
+    
+
+} 
+.divsub{
+    padding: 2rem;
+    background-color: #c78d8d;
+    height: auto;
+    
+    
+}
+
+.divfooter{
+    font-size: 15px;
+    color: aqua;
+    background-color: azure;
+    padding: 0.5rem;
+    
+
+
+}
+
+a{text-decoration: none !important;}
+
+@media (min-width:600px) and (max-width:800px){
+.divnav{
+        
+        background-color: aquamarine;
+    }
+.mainmenu{
+        font-size: 26px;
+        height: 60vmin;
+    }
+#mainImg{
+        width: 60%;
+  
+    }          
+
+       
+}
+
+@media (min-width:800px) and (max-width:1200px){
+
+    .divmainwrap{
+        display: flex;
+            flex-wrap: wrap;
+            background-color: bisque;
+            margin: 1px;
+            color: black;
+            height:100%;
+    
+        
+        }
+    .divnav{
+            
+            width:100%;
+            display: flex;
+            flex-direction: row;
+           
+            height: 5vmin;;
+    }
+    .mainmenu{
+        font-size: 28px;
+       
+       
+    }
+
+    .divmain{
+               padding: 1rem;
+               flex:1;
+               height:95%;
+    
+        
+           }
+        
+    #mainImg{
+            width: 50%;
+            height: auto;
+            float: left;
+        }          
+    
+    .divsub{
+               padding: 1rem;
+               background-color: #c78d8d;
+               
+               flex:1;
+           }
+    
+    
+}
+
+@media screen and (min-width:1200px){
+
+    .divmainwrap{
+        display: flex;
+        flex-direction: row;
+        height:90vh;
+        
+    }
+    .divnav{
+        flex-basis:30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainmenu{
+        flex:unset;
+        font-size:30px;
+    }
+    .divmain{
+        flex-basis:35%;
+    }
+    #mainImg{
+        width: 55%;
+        height: auto;
+        float: left;
+    }          
+
+    .divsub{
+        flex-basis:30%;
+    }
+}
